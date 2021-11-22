@@ -20,7 +20,7 @@ If extra connection exists them the latest connected client disconnects.
 
 Authentication
 1> Enter Ashoka Email address:
-	NOTE: vALID EMAIL ENDING WITH "@ASHOKA.EDU.IN" NEEDS TO BE SUPPLIED ELSE EMAIL ERROR. Email Validation is done using regex. 
+	NOTE: vALID EMAIL ENDING WITH "@ASHOKA.EDU.IN" NEEDS TO BE SUPPLIED ELSE EMAIL ERROR. Email Validation is done using regex in client side. 
 
 	- If ashoka_email not in user_info (signup) then generate random password and send to client.
 	- If ashoka_email is present in user_info (login) then enter password to login.
@@ -52,8 +52,8 @@ import string
 
 
 thread_count = 0
-# voting end time set to 30 min after start of the server
-voting_end_time = datetime.now() + timedelta(minutes=1)
+# voting end time set to 5 min after start of the server
+voting_end_time = datetime.now() + timedelta(minutes=5)   #================ Change timedelta Here ========================
 
 #user_table: (email, pswd, ip, time) stores the signup credentials
 #live_table: (Email,Client_IP,Live_Time,Port) keeps record of active connections

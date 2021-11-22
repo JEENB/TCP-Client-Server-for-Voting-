@@ -1,9 +1,9 @@
 '''
-multi_server.py allows 1 vote per IP. So, running the client in one system allows only 1 vote regardless of different threads. 
+multi_server.py allows 1 vote per IP. So, running the client in one system allows only 1 vote regardless of different emails. 
 
 This script records vote by email address. So, multiple votes can be voted from same ip. 
 
-voting_time_end: set to 3 min (change line 21)
+voting_time_end: set to 3 min after server start (change line 21)
 '''
 
 
