@@ -125,7 +125,7 @@ def signup(client):
 			n -= 1
 			check =  check_existing_user(client_email, client_password) 
 			pswd_count += 1
-			if pswd_count == 3:
+			if pswd_count > 3:
 				msg = "Attempt for Password Exceeded! \nDisconnecting..."
 				close_connections(client,msg,addr)
 		if check[0:4] == "True":
